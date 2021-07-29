@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<!-- Website built and designed by Mark Stewart Irvine -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
+<!-- Defining html5 with XHTML above-->
+
+    <head>
+      <meta charset="UTF-8"/>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+      <script src="js/firebase.js"> </script>
+
+      <!-- CSS link -->
+      <link href="css/style.css" rel="stylesheet" type="text/css" />
+      <!-- Pure CSS link -->
+      <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+      <!--[if lte IE 8]>
+      <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+      <![endif]-->
+      <!--[if gt IE 8]><!-->
+      <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+      <!--<![endif]-->
+
+      <!-- Font Awesome stuff -->
+      <!-- <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"> -->
+      <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous"> -->
+      <script src="https://kit.fontawesome.com/7cb38d407d.js" crossorigin="anonymous"></script>
+
+      <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" /> -->
+      <!-- Script Link-->
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> -->
+      <!-- <script src="draw.js"></script> -->
+      <!-- Run Script-->
+
+      <title> Mark Stewart Irvine </title>
+      </head>
+
+    <body>
+
+        <!-- <div class="header">
+            <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+                <a class="pure-menu-heading" href="">Mark Stewart Irvine</a>
+
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">About</a></li>
+                    <li class="pure-menu-item"><a href="#" class="pure-menu-link">Projects</a></li>
+                </ul>
+            </div>
+        </div> -->
+
+        <!-- As a heading -->
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand mb-0 h1">Navbar</span>
+        </nav>
+
+        <div class="splash-container">
+            <div class="splash">
+                <br><br>
+                <h1 class="splash-head">Mark Stewart Irvine</h1>
+                <!-- <p class="splash-subhead">
+                    DEVELOPER
+                </p> -->
+                <!-- <br>
+                <br>
+                <br>
+                <br> -->
+                <!-- <p>
+                    <a href="http://purecss.io" class="pure-button pure-button-primary">Get Started</a>
+                </p> -->
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="content">
+                <h2 class="content-head is-center"><i class="fa fa-angle-down fa-1g"></i> About me <i class="fa fa-angle-down fa-1g"></i></h2>
+
+                <img class="selfie" src="images/season3.png"> </img>
+
+                <br>
+                <br>
+
+                <div class="pure-g">
+                    <div class="content-row">
+                        <div class="l-box pure-u-1 pure-u-md-3-4">
+
+                            <br>
+                            <h3 class="content-subhead">
+                                <i class="fa fa-graduation-cap"></i>
+
+                                Computer Science at the University of Bristol
+                            </h3>
+
+                            <p>
+                                I graduated with a MEng in Computer Science (2:1).
+                                <br>
+                                My main interests during the degree were in artificial intelligence (AI) and designing and writing software.
+                            </p>
+                        </div>
+                        <div class="l-box pure-u-1 pure-u-md-1-4">
+                            <br>
+                            <br>
+
+                            <img class="" height="auto" width="100%" src="images/wills.jpg"></img>
+                        </div>
+                    </div>
+
+                    <div class="content-row">
+                        <div class="l-box pure-u-1 pure-u-md-3-4">
+
+                            <br>
+                            <h3 class="content-subhead">
+                                <i class="far fa-laugh-beam"></i>
+
+                                Stand-Up Comedy
+                            </h3>
+
+
+
+                            <p>
+                                I enjoy doing stand-up comedy in my spare time, having performed to audiences of up to 50 people.
+                            </p>
+                        </div>
+                        <div class="l-box pure-u-1 pure-u-md-1-4">
+                            <br>
+                            <br>
+                            <img height="auto" width="100%" src="images/comedy.jpg"></img>
+                        </div>
+                    </div>
+
+
+                    <div class="content-row">
+                        <div class="l-box pure-u-1 pure-u-md-3-4">
+
+                            <br>
+                            <h3 class="content-subhead">
+                                <i class="fas fa-skiing"></i>
+
+                                Skiing
+                            </h3>
+
+                            <p>
+                                After University I spent the winter season in the French Alps working as a chalet chef for Ski Fammile.
+                                This allowed me to pursue my passion of skiing.
+                                
+                            </p>
+                            <a href="https://www.skifamille.co.uk/"> Website link </a>
+                        </div>
+                        <div class="l-box pure-u-1 pure-u-md-1-4">
+                            <br>
+                            <br>
+                            <img height="auto" width="100%" src="images/skiing-chair.jpg"></img>
+                        </div>
+                    </div>
+
+                    <div class="content-row">
+                            <div class="l-box pure-u-md-2-5">
+                            </div>
+
+                            <div class="l-box pure-u-md-1-5">
+                                <a href="https://github.com/marksirvine"> <i style="color:black" class="fab fa-github fa-5x"> </i> </a>
+
+                                <a href="https://www.linkedin.com/in/mark-irvine-9114a2108"> <i class="fab fa-linkedin fa-5x"> </i></a>
+                            </div>
+
+                            <div class="l-box pure-u-md-2-5">
+                            </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="ribbon l-box pure-g">
+                <div class="pure-u-1">
+                    <h2 class="content-head is-center colour-white"><i class="fa fa-angle-down fa-1g"></i> Projects <i class="fa fa-angle-down fa-1g"></i></h2>
+                </div>
+
+                <div class="content-row content">
+                    <div class="pure-u-1-5">
+                        <h2 class="content-head content-head-ribbon"><b>Lockdown </b></h2>
+                    </div>
+                    <div class="pure-u-4-5">
+                        <br>
+                        <div>
+                            <p style="margin-top:22px;"> (the game, not the pandemic)</p>
+                        </div>
+                    </div>
+                
+                    
+                    
+                <!-- <div class="content-row content"> -->
+                    <div class="l-box pure-u-3-5">
+                        <video class="lockdown-video" muted autoplay="autoplay" loop="loop">
+                            <source src="videos/SecurityVideo.mp4" type="video/mp4"></source>
+                        </video>
+                    </div>
+
+                    <div class="l-box pure-u-2-5">
+                        <p>
+                            A multiplayer stealth game where four players try and find an intruder in the secret base using drones and power ups.
+                            <br> <br>
+                            I took on the role of team leader in the year long project, implementing features and managing the team.
+                            <br> <br>
+                            My main focus was creating the drones and AI that controlled them.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="content-row content">
+                    <h2 class="content-head content-head-ribbon"><b>Neuralism</b></h2>
+
+                    <div class="l-box pure-u-3-5">
+                        <div class="l-box pure-u-3-5">
+                            <a href="https://www.neuralism.net"><img height="auto" width="120%" src="images/lennon-half.png"></img> </a>
+                        </div>
+                    </div>
+
+                    <div class="l-box pure-u-2-5">
+                        <p>
+                            A website that allows users to create art using AI.
+                            <br>
+                            <br>
+
+                            It makes use of an artificial neural network to extract the content of one image and style of another, then combines the two.
+                            <br>
+                            <br>
+                            <a class="cyan" href="https://www.neuralism.net"> Website link </a>
+
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="content-row content">
+                    <h2 class="content-head content-head-ribbon"><b>Masters Thesis</b></h2>
+
+                    <div class="l-box pure-u-3-5">
+                        <br>
+                        <img height="80%" width="100%" src="images/ar-style.png"></img>
+                    </div>
+
+                    <div class="l-box pure-u-2-5">
+                        <p>
+
+                            I asked the question "Can you use artificial neural networks
+                            to reduce perceptual issues in augmented reality (AR)?".
+
+                            <br>
+                            <br>
+
+                            I found that in using a convolutional neural network I was able to create images and videos where AR objects were very difficult to distinguish from real ones.
+
+                            <br>
+
+
+
+                            The network was able to replace the low level features of the AR image (where perceptual issues were present) with consistent and homogeneous features.
+
+                            <br><br>
+                            The image to the left contains an AR pear and AR red pen.
+
+
+                        </p>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <!-- <div class="content-row content">
+                    <h2 class="content-head content-head-ribbon"><b>Hudu</b></h2> -->
+                    <!-- <div class="l-box pure-u-3-5 pure-u-md-1-2 pure-u-lg-1-4">
+                      <p>
+
+                      </p>
+                    </div> -->
+
+                    <!-- <div class="l-box pure-u-3-5">
+                        <video class="lockdown-video" muted autoplay="autoplay" loop="loop">
+                            <source src="videos/HuduPromoFinishedTrim.mp4" type="video/mp4"></source>
+                        </video>
+                    </div> -->
+
+                    <!-- <div class="l-box pure-u-2-5">
+                        <p>
+                            I was part of the team Kodimanjaro and we created the android application and online analytics tool called Hudo. <br><br>
+                            Hudo is a tool designed to help syrian refugees record their Post Traumatic Stress Disorder (PTSD) symptoms.
+                            Researchers can view and track this data using the online analytics tool, to measure effectivness of prevention methods.
+                            <br><br>
+                            <a class="cyan" href= "https://github.com/marksirvine/hudu"> Github repo </a>
+
+                        </p>
+                    </div> -->
+
+                <!-- </div> -->
+
+            </div>
+
+
+          <div class="content">
+                    <h2 class="content-head is-center"> <i class="fa fa-angle-down fa-1g"></i> Experience <i class="fa fa-angle-down fa-1g"></i> </h2>
+
+
+                    <div class="content-row pure-g">
+                        <div class="pure-u-3-4">
+
+                            <br>
+                            <h3 class="content-subhead">
+                                <i class="fa fa-search"></i>
+
+                              Software Engineer - Pole Star
+                            </h3>
+
+                            <p> At Pole Star I did full stack development, building software for national rail and health and safety companies.
+                                
+
+                                <br><br> Both systems used a Java back-end and HTML/Javascript front-end.
+                                <br><br> This role involved the entire development process from specification writing and technical design to implementation and deployment.
+                            </p>
+                            <a href="https://polestar-systems.com/"> Website link </a>
+                            
+                        </div>
+                        <div class="pure-u-1-4 ">
+                            <br>
+                            <img class="image top-buffer" height="auto" width="60%" src="images/polestar.png"></img>
+                        </div>
+                    </div>
+                    <br>
+
+              <div class="content-row pure-g">
+                  <div class="pure-u-3-4">
+
+                      <br>
+                      <h3 class="content-subhead">
+                          <i class="fa fa-search"></i>
+
+                        Summer Intern - Sword Apak
+                      </h3>
+
+                      <p> I was a member of the development team in the software house Sword Apak. <br>
+                          I built a new database search tool for the company's wholesale finance system.
+                          This search tool reduced search times by 100x as well as providing a user friendly "Google" style interface.
+                          <br><br> This was my first position at a software company and gave me an introduction to the software development industry.
+                          <br><br>
+                          <a class="cyan" href="https://www.apakgroup.com/"> Website link </a>
+                      </p>
+                  </div>
+                  <div class="pure-u-1-4 ">
+                      <br>
+                      <img class="image top-buffer" src="images/sword.jpg"></img>
+                  </div>
+              </div>
+              <br>
+
+              <div class="content-row pure-g">
+                  <div class="pure-u-3-4">
+
+                      <br>
+                      <h3 class="content-subhead">
+                          <i class="fa fa-search"></i>
+
+                        Summer Intern - Entwine App (Startup)
+                      </h3>
+
+                      <p>
+                          I took over as lead developer in creating Entwine's IOS app. My primary responsibility was moving the app's database and networking to a long term solution, while maintaining functionality.
+                          I then designed and implemented new app features.
+                          <br><br> Working at Entwine gave me the opportunity to work on a start-up project in a close knit team.
+                          <br><br>
+                          <a href="http://www.bristol.ac.uk/news/2017/february/dating-app-.html"> Article on the project</a>
+                          <!-- <br>
+                          <a href="https://itunes.apple.com/us/app/entwine/id1136635670?ls=1&mt=8"> App store link </a> -->
+
+                      </p>
+                  </div>
+                  <div class="pure-u-1-4 ">
+                      <br>
+                      <br>
+
+                      <img class="image top-half-buffer" src="images/entwine.jpg-large"></img>
+                  </div>
+              </div>
+
+            </div>
+
+        </div>
+    </body>
+
+</html>
